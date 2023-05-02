@@ -13,7 +13,7 @@ function start()
     recognition.start();
 }
 
-recognition.oneresult = function(event) {
+recognition.onresult = function(event) {
     console.log(event);
 
     var content = event.results[0][0].transcript;
